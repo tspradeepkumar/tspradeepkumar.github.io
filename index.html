@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body { line-height: 1.6; color: #222; background: #f5f7fb; }
+    header { background: #111827; color: #fff; padding: 2.5rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { opacity: 0.9; }
+    nav { margin-top: 1.2rem; }
+    nav a { color: #9ca3af; margin: 0 0.8rem; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #fff; }
+
+    section { max-width: 1000px; margin: auto; padding: 3rem 1rem; }
+    section h2 { font-size: 2rem; margin-bottom: 1rem; color: #111827; }
+
+    .about p { max-width: 700px; }
+
+    .skills ul { display: flex; flex-wrap: wrap; list-style: none; }
+    .skills li { background: #e5e7eb; margin: 0.5rem; padding: 0.6rem 1rem; border-radius: 20px; }
+
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .project-card { background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
+    .project-card h3 { margin-bottom: 0.5rem; }
+
+    .contact a { display: inline-block; margin-top: 0.8rem; color: #2563eb; text-decoration: none; font-weight: bold; }
+
+    footer { text-align: center; padding: 1.5rem; background: #111827; color: #9ca3af; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      nav a { display: inline-block; margin: 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Web Developer | Researcher | Designer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate professional interested in building clean, user-friendly
+      applications and working on meaningful research and projects. This is a
+      simple portfolio website to showcase my work and skills.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Machine Learning</li>
+      <li>IoT</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Short description of your project and what technologies you used.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Another project description highlighting your contribution.</p>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>A brief summary of this project and its outcome.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: yourname@email.com</p>
+    <p>LinkedIn / GitHub / Portfolio links</p>
+    <a href="mailto:yourname@email.com">Send me an email</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
