@@ -2,102 +2,206 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pradeep Kumar TS | Portfolio</title>
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
-    body { line-height: 1.6; color: #222; background: #f5f7fb; }
-    header { background: #111827; color: #fff; padding: 2.5rem 1rem; text-align: center; }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    header p { opacity: 0.9; }
-    nav { margin-top: 1.2rem; }
-    nav a { color: #9ca3af; margin: 0 0.8rem; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #fff; }
+    :root {
+      --primary: #0d6efd;
+      --dark: #0b132b;
+      --light: #f8f9fa;
+      --gray: #6c757d;
+    }
 
-    section { max-width: 1000px; margin: auto; padding: 3rem 1rem; }
-    section h2 { font-size: 2rem; margin-bottom: 1rem; color: #111827; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
 
-    .about p { max-width: 700px; }
+    body {
+      background: var(--light);
+      color: #222;
+      line-height: 1.6;
+    }
 
-    .skills ul { display: flex; flex-wrap: wrap; list-style: none; }
-    .skills li { background: #e5e7eb; margin: 0.5rem; padding: 0.6rem 1rem; border-radius: 20px; }
+    header {
+      background: linear-gradient(135deg, var(--dark), #1c2541);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
 
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
-    .project-card { background: #fff; padding: 1.5rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
-    .project-card h3 { margin-bottom: 0.5rem; }
+    header h1 {
+      font-size: 2.5rem;
+    }
 
-    .contact a { display: inline-block; margin-top: 0.8rem; color: #2563eb; text-decoration: none; font-weight: bold; }
+    header p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+      color: #dbe2ef;
+    }
 
-    footer { text-align: center; padding: 1.5rem; background: #111827; color: #9ca3af; }
+    nav {
+      background: white;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
 
-    @media (max-width: 600px) {
-      header h1 { font-size: 2rem; }
-      nav a { display: inline-block; margin: 0.4rem; }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: var(--dark);
+    }
+
+    .about p {
+      color: var(--gray);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: white;
+      padding: 10px 15px;
+      margin: 8px;
+      border-radius: 20px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      font-weight: 500;
+    }
+
+    .projects .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .projects h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 10px 15px 0 0;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #1c2541;
+      color: #bbb;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer span {
+      color: white;
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Your Name</h1>
-    <p>Web Developer | Researcher | Designer</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Pradeep Kumar TS</h1>
+  <p>Educator • AI Enthusiast • Content Creator</p>
+</header>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
+<nav>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am an academic professional and technology enthusiast with experience in
+    teaching, administrative operations, AI tools, and content creation.
+    I actively work on AI education, blogging, and YouTube content,
+    focusing on practical applications of emerging technologies.
+  </p>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <span>Artificial Intelligence</span>
+  <span>Python</span>
+  <span>Deep Learning</span>
+  <span>Data Privacy & Security</span>
+  <span>Academic Administration</span>
+  <span>YouTube Content Creation</span>
+</section>
+
+<section id="projects" class="projects">
+  <h2>Projects & Work</h2>
+
+  <div class="card">
+    <h3>AI for Staff Development</h3>
     <p>
-      I am a passionate professional interested in building clean, user-friendly
-      applications and working on meaningful research and projects. This is a
-      simple portfolio website to showcase my work and skills.
+      Designed and delivered hands-on workshops on using Large Language Models
+      to improve daily office and academic productivity.
     </p>
-  </section>
+  </div>
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Python</li>
-      <li>Machine Learning</li>
-      <li>IoT</li>
-    </ul>
-  </section>
+  <div class="card">
+    <h3>Engineering Clinic – YouTube Channel</h3>
+    <p>
+      Educational channel covering AI, machine learning, Linux, and academic tools.
+    </p>
+  </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>Short description of your project and what technologies you used.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project Two</h3>
-        <p>Another project description highlighting your contribution.</p>
-      </div>
-      <div class="project-card">
-        <h3>Project Three</h3>
-        <p>A brief summary of this project and its outcome.</p>
-      </div>
-    </div>
-  </section>
+  <div class="card">
+    <h3>nsnam.com Blog</h3>
+    <p>
+      Long-running technical blog focused on education, technology, and AI tools.
+    </p>
+  </div>
+</section>
 
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@email.com</p>
-    <p>LinkedIn / GitHub / Portfolio links</p>
-    <a href="mailto:yourname@email.com">Send me an email</a>
-  </section>
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <a href="mailto:your-email@example.com">Email</a>
+  <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank">LinkedIn</a>
+  <a href="https://github.com/your-github-username" target="_blank">GitHub</a>
+  <a href="https://www.youtube.com/@tspradeepkumar" target="_blank">YouTube</a>
+</section>
 
-  <footer>
-    <p>© 2026 Your Name. All rights reserved.</p>
-  </footer>
+<footer>
+  © <span>2026</span> Pradeep Kumar TS • Hosted on GitHub Pages
+</footer>
 
 </body>
 </html>
